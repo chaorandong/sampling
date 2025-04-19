@@ -44,27 +44,57 @@ The number of your chosen topic: `#1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The survey aims to understand the reasons behind the high turnover rate among entry- and lower-level employees at the company. Specifically, it intends to identify the factors contributing to turnover and explore potential strategies to address these issues and improve employee satisfaction.
+
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+The target population includes all current and recently departed (within the past three months) entry- and lower-level employees at the company. The sampling frame consists of the employee list provided by the Human Resources Department, including rosters of current entry- and lower-level employees and exit records of eligible former employees with relevant contact information. The sampling unit is an individual entry- or lower-level employee, either currently employed or who left within the past three months.
+A stratified sampling strategy will be used to ensure representation across all departments and improve the precision of estimates. The population will be divided into subgroups based on department, with larger departments assigned larger sample sizes. Individual responses will remain anonymous to protect the privacy of participants. The sampling design allows for both estimating key measures within specific strata and pooling responses to calculate overall population estimates.
 
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1.	Are you currently employed at the company?
+   i.	Yes
+   ii.	No
+2.	Which of the following best describes your position and department at the company?
+   i.	Position level
+      a.	Entry-level
+      b.	Lower-level 
+      c.	Other (please specify)
+   ii.	Department
+3.	How long have/did you work at the company?
+   i.	Less than 6 months
+   ii.	6 months to 1 year
+   iii.	1-2 year
+   iv.	More than 2 years
+4.	On a scale of 1 to 5, how satisfied are/were you with your position overall?
+   (Scale: 1 = Very dissatisfied, 5 = Very satisfied)
+5.	On a scale of 1 to 5, how satisfied are/were you with the company as a whole?
+   (Scale: 1 = Very dissatisfied, 5 = Very satisfied)
+6.	Which aspects of your job at the position have mostly affected your satisfaction with your role? (Select all that apply)
+   i.	Pay or benefits
+   ii.	Opportunities for growth or promotion
+   iii.	Clarity of job expectations
+   iv.	Recognition for your work
+   v.	Workload or job demands
+   vi.	Types of tasks or responsibilities
+   vii.	Communication from direct manager
+   viii.	Support and leadership from direct manager
+   ix.	Other (please specify)
+   x.  None of the above
+7.	Which aspects of the company have most affected your satisfaction with the organization overall? (Select all that apply)
+   i.	Company culture or values
+   ii.	Workplace policies or practices
+   iii.	Training and onboarding programs
+   iv.	Responsiveness to employee feedback or concerns
+   v.	Inclusion and respect across working environment
+   vi.	Other (please specify)
+   vii.	None of the above
+8.	What changes or improvements would have the most positive impact on your experience in this position or with the company overall?
 
 ```
 
@@ -73,7 +103,32 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+a.	Sample type
+   i.	Stratified probability sampling. The stratification is done at the province/census metropolitan area (CMA) level. 
+b.	Sample size
+   i.	A sample of approximately 50,000 units was used. A completion of 24,000 questionnaires was expected.
+c.	Target population
+   i.	All persons aged 15 years and older living in the ten provinces of Canada. Full-time (residing for more than six months) residents of institutions were excluded.
+d.	Sampling frame
+   i.	Households with landline and cellular telephone numbers from the Census and various administrative sources.
+e.	Survey mode(s)
+   i.	Electronic questionnaire or through CATI (computer assisted telephone interviewing).
+f.	Timeline
+   i.	Data collection period was 2018-09-04 to 2018-12-28.
+g.	Response rate
+   i.	41.9%.
+h.	Weights
+   i.	The weight assigned to each respondent reflects the number of individuals in the population that the respondent represents. Adjustments were made to the weights for respondents who were not “rejected” and were not volunteers by applying a multiplication factor. The weights were also adjusted to match the income distribution. Bootstrap weights were used for design-based variance estimation.
+i.	Data processing
+   i.	Data processing followed the SSPE framework, using standardized tools and procedures to ensure quality and consistency. Edits were conducted both automatically and manually at multiple stages, including family, consistency, and flow edits. The CATI system applied real-time checks during interviews, validating response ranges and questionnaire flow. Unresolved issues were flagged for review and correction at head office, where additional edits and interviewer comments were also reviewed.
+j.	Cleaning, imputation, etc
+   i.	Data cleaning included validation checks and consistency edits to identify and correct errors. Flow edits were applied to ensure logical progression through the questionnaire, and family relationship checks to ensure internal consistency. Imputations regarding missing information were made using donor records selected through a score function.
+k.	Sources of error
+   i.	The survey is subject to both sampling and non-sampling errors. Sampling error arises because data are collected from a sample rather than the entire population and variability exist between samples. Non-sampling errors include coverage errors (e.g., excluding households without telephones), non-response at both individual and household level, response errors and processing errors. 
+l.	Limitations, known biases, etc
+   i.	Limitations and biases included potential underrepresentation of certain populations (e.g., individuals without telephone access), non-response bias (i.e., individuals who do not respond to the survey differ in important ways from those who do respond). Recall bias could also be an issue as self-reported data was collected in this survey.
+m.	Link to documentation and any additional sources used
+   i.	The information collected has been linked to the personal tax records (T1, T1FF or T4) of respondents, and tax records of all household members. 
 
 ```
 
