@@ -12,6 +12,9 @@ import seaborn as sns
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
+# Define random seed for reproducibility
+np.random.seed(123)
+
 # Constants representing the parameters of the model
 ATTACK_RATE = 0.10
 TRACE_SUCCESS = 0.20
@@ -32,8 +35,16 @@ def simulate_event(m):
   - A tuple containing the proportion of infections and the proportion of traced cases
     that are attributed to weddings.
   """
+
+   # Generate event ID for each individual, considering the size of the events
+  events = []
+  for i in range(2):  # 2 weddings
+        events.extend([f'wedding_{i}'] * 100)
+  for i in range(80):  # 80 brunches
+        events.extend([f'brunch_{i}'] * 10)
+
   # Create DataFrame for people at events with initial infection and traced status
-  events = ['wedding'] * 200 + ['brunch'] * 800
+  # events = ['wedding'] * 200 + ['brunch'] * 800
   ppl = pd.DataFrame({
       'event': events,
       'infected': False,
@@ -44,8 +55,9 @@ def simulate_event(m):
   ppl['traced'] = ppl['traced'].astype(pd.BooleanDtype())
 
   # Infect a random subset of people
-  infected_indices = np.random.choice(ppl.index, size=int(len(ppl) * ATTACK_RATE), replace=False)
-  ppl.loc[infected_indices, 'infected'] = True
+  # infected_indices = np.random.choice(ppl.index, size=int(len(ppl) * ATTACK_RATE), replace=False)
+  # ppl.loc[infected_indices, 'infected'] = True
+  ppl['infected'] = np.random.rand(len(ppl)) < ATTACK_RATE
 
   # Primary contact tracing: randomly decide which infected people get traced
   ppl.loc[ppl['infected'], 'traced'] = np.random.rand(sum(ppl['infected'])) < TRACE_SUCCESS
@@ -68,7 +80,7 @@ def simulate_event(m):
   return p_wedding_infections, p_wedding_traces
 
 # Run the simulation 1000 times
-results = [simulate_event(m) for m in range(1000)]
+results = [simulate_event(m) for m in range(100)]
 props_df = pd.DataFrame(results, columns=["Infections", "Traces"])
 
 # Plotting the results
